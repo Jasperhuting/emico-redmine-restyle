@@ -1,0 +1,102 @@
+.restyle .issues-board .issue-card {
+    background-color: white;
+    border-radius: 5px;
+}
+.restyle .issues-board .info.assigned-user {
+    border: 0;
+}
+.restyle .issues-board .info.assigned-user span.user {
+    padding: 5px;
+    border-radius: 5px;
+    color: black;
+}
+
+.restyle .issues-board .info.assigned-user .user img {
+    display: none;
+}
+.restyle .issue-card p.name.has-label {
+    padding-top: 18px;
+    padding-bottom: 10px;
+}
+.restyle .issues-board .issue-card {
+    margin-bottom: 10px;
+}
+.restyle .labels-container {
+    right: 0;
+    top: 0;
+    left: 0;
+    height: 19px;
+    border-radius: 0;
+    position: absolute;
+    background-color: #f3f3f3;
+    border-bottom: 1px solid #d5d5d5;
+    overflow: hidden;
+}
+.restyle .label {
+    font-size: 12px;
+    padding: 3px;
+    top: 1px;
+    font-weight: 500;
+}
+.restyle .label.FE {
+    background-color: #2f7aec;
+    /* background-color: #643fdb; */
+    color: white;
+}
+.restyle .label.BE {
+    /* background-color: #ec2f7c; */
+    background-color: #ff8a00;
+    color: white;
+}
+
+.restyle span.label:first-of-type {
+    border-top-left-radius: 5px;
+}
+.restyle span.label:last-of-type {
+    border-bottom-right-radius: 5px;
+}
+.restyle .ticket-number {
+    padding-left: 4px;
+    color: grey;
+    font-weight: 500;
+    font-size: 10px;
+}
+.restyle span.hours {
+    display: none;
+}
+.restyle .textPointsContainer {
+    position: absolute;
+    right: 2px;
+    bottom: 2px;
+    color: #757575;
+    z-index: 1;
+    border: 1px solid #757575;
+    border-radius: 100%;
+    width: 12px;
+    height: 12px;
+    font-size: 9px;
+    text-align: center;
+}
+
+/* .restyle .issues-board tr th:first-child {
+    display: none;
+}
+
+.restyle .issue td:first-child {
+    display: none;
+} */
+
+.restyle .assigned-user .user.active {
+    position: absolute;
+    left: 5px;
+    right: 5px;
+    bottom: 0;
+    margin-top: 5px;
+    padding-top: 0;
+    border-top: 1px solid #d5d5d5;
+    height: auto;
+    color: #5d5d5d;
+}
+.restyle #wrapper .issues-board  .context-menu-selection {
+    background-color: #83848c !important;
+}

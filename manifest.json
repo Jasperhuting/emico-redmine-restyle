@@ -1,0 +1,32 @@
+{
+    "manifest_version": 2,
+    "name": "Emico",
+    "description": "This extension will restyle the redmine page",
+    "version": "1.0",
+    "icons": {
+        "16": "emico.png",
+        "128": "emico.png"
+    },
+    "browser_action": {
+        "default_icon": "emico.png",
+        "default_title": "Redmine restyle"
+    },
+    "content_scripts": [
+        {
+        "matches": [
+            "https://support.emico.nl/*"
+        ],
+        "css": ["restyle.css"],
+        "js": ["contentScript.js"]
+        }
+    ],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "permissions": [
+        "storage",
+        "activeTab"
+      ]
+
+}
